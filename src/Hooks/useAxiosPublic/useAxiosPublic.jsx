@@ -2,8 +2,8 @@ import axios from "axios";
 
 // create axios instance
 const axiosPublic = axios.create({
-     baseURL: 'http://localhost:5001'
-    // baseURL: 'https://motor-mingle-server.vercel.app'
+    // baseURL: 'http://localhost:5001'
+     baseURL: 'https://srsgs-server.vercel.app/'
 })
 
 
