@@ -1,18 +1,13 @@
-// Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
-
-// Your web app's Firebase configuration
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCVorYMOnMoBFgJSTNPa6y2bA29vDkzNKY",
-  authDomain: "srsgs-ae1de.firebaseapp.com",
-  projectId: "srsgs-ae1de",
-  storageBucket: "srsgs-ae1de.firebasestorage.app",
-  messagingSenderId: "92793113523",
-  appId: "1:92793113523:web:328b8d8b888d2cb0e9d9c6",
-  measurementId: "G-NX120SCTXP"
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID,
+  measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID,
 };
 
 // Initialize Firebase
